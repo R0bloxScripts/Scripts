@@ -298,8 +298,8 @@ function ESP:Add(obj, options)
 	})
 	box.Components["Distance"] = Draw("Text", {
 		Color = box.Color,
-		Center = true,
-		Outline = true,
+		Center = false,
+		Outline = false,
 		Size = 0,
 		Visible = self.Enabled and self.Names
 	})
