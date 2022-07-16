@@ -10,7 +10,7 @@ local ESP = {
 	TeamColor = true,
 	Thickness = 0.5,
 	AttachShift = 1,
-	TeamMates = true,
+	TeamMates = false,
 	Players = true,
 
 	Objects = setmetatable({}, {__mode="kv"}),
@@ -293,14 +293,14 @@ function ESP:Add(obj, options)
 		Color = box.Color,
 		Center = true,
 		Outline = true,
-		Size = 3,
+		Size = 5,
 		Visible = self.Enabled and self.Names
 	})
 	box.Components["Distance"] = Draw("Text", {
 		Color = box.Color,
 		Center = true,
 		Outline = true,
-		Size = 3,
+		Size = 5,
 		Visible = self.Enabled and self.Names
 	})
 
